@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CK's Quality Maintenance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<style>
+html {
+scroll-behavior: smooth;
+}
+</style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Tap‑to‑Call Bar -->
+  <div class="fixed bottom-0 left-0 w-full bg-green-600 text-white text-center py-3 font-bold z-50 shadow-lg md:hidden">
+    <a href="tel:+8635218159" class="block w-full">📞 Tap to Call: (863) 621-8159</a>
+  </div>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+<div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+<!-- Left: Logo + Name -->
+<div class="flex items-center space-x-2">
+<img src="image1.png" alt="Logo" class="h-10 w-auto" />
+<h1 class="font-bold text-2xl text-green-600">CK's Quality Maintenance</h1>
+</div>
+
+
+<!-- Center: Nav Buttons -->
+<ul class="hidden md:flex space-x-6 font-semibold absolute left-1/2 transform -translate-x-1/2">
+<li><a href="#home" class="hover:text-green-600 transition">Home</a></li>
+<li><a href="#services" class="hover:text-green-600 transition">Services</a></li>
+<li><a href="#quote" class="hover:text-green-600 transition">Quote</a></li>
+<li><a href="#contact" class="hover:text-green-600 transition">Contact</a></li>
+</ul>
+
+
+<!-- Right: Call Button -->
+<a href="tel:+8635218159" class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-800 transition">Call Us</a>
+</div>
+</nav>
+
+<!-- HERO --> <!--If wanted full screen header to "h-screen" instead of "h-[70vh]"-->
+<header id="home" class="bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('https://media.discordapp.net/attachments/1392665139333038082/1442664906439524473/IMG_1707.jpg?ex=692641e5&is=6924f065&hm=14cea268fe404f6f7e56e50ab714cb8fb0cd2db2b0d5e898d24a17a652271107&=&format=webp&width=1242&height=932');">
+<div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-center p-6">
+<h1 class="text-white text-5xl font-bold mb-4 drop-shadow-lg">CK's Quality Maintenance</h1>
+<p class="text-white text-xl mb-6 drop-shadow-lg">Professional Power Washing for Homes & Businesses</p>
+<a href="#quote" class="bg-green-600 hover:bg-green-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">Get Instant Quote</a>
+</div>
+</header>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">Pressure Washing</h3>
+        <p>We can pressure wash Driveways, Sidewalks, Windows, Pool Cages, Fences, and Gutters</p>
+      </div>
+      <div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">Landscaping</h3>
+        <p>Borders, Mulching, Bed cleaning, and Hedge trimming.</p>
+      </div>
+      <div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-3">Junk Removal</h3>
+        <p>Homes, Garages, Sheds, and Yard waste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pressure Washing -->
+<!-- <div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+<h3 class="text-2xl font-bold mb-4 text-green-600">Pressure Washing</h3>
+<ul class="text-left space-y-2 font-medium">
+<li class="flex items-center gap-2">✅ Driveways</li>
+<li class="flex items-center gap-2">✅ Sidewalks</li>
+<li class="flex items-center gap-2">✅ Windows</li>
+<li class="flex items-center gap-2">✅ Pool Cages</li>
+<li class="flex items-center gap-2">✅ Fences</li>
+<li class="flex items-center gap-2">✅ Gutters</li>
+</ul>
+</div>
+
+
+ Landscaping
+<div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+<h3 class="text-2xl font-bold mb-4 text-green-600">Landscaping</h3>
+<ul class="text-left space-y-2 font-medium">
+<li class="flex items-center gap-2">🌿 Borders</li>
+<li class="flex items-center gap-2">🌱 Mulching</li>
+<li class="flex items-center gap-2">🧹 Bed Cleaning</li>
+<li class="flex items-center gap-2">✂️ Hedge Trimming</li>
+</ul>
+</div>
+
+
+Junk Removal
+<div class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+<h3 class="text-2xl font-bold mb-4 text-green-600">Junk Removal</h3>
+<ul class="text-left space-y-2 font-medium">
+<li class="flex items-center gap-2">🏠 Homes</li>
+<li class="flex items-center gap-2">🚗 Garages</li>
+<li class="flex items-center gap-2">🏚️ Sheds</li>
+<li class="flex items-center gap-2">🗑️ Yard Waste</li>
+</ul>
+</div>
+
+
+</div>
+</section> -->
+
+  <!-- QUOTE CALCULATOR -->
+  <section id="quote" class="bg-green-900 text-white py-20 px-6 md:px-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">Instant Quote Calculator</h2>
+
+    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg max-w-lg mx-auto">
+      <form id="quoteForm">
+        <label class="font-semibold">Square Footage</label>
+        <input type="number" id="sqft" placeholder="e.g. 1200" class="w-full mb-4 border rounded p-3" />
+
+        <label class="font-semibold">Surface Type</label>
+        <select id="surface" class="w-full mb-4 border rounded p-3">
+          <option value="0.25">House Exterior</option>
+          <option value="0.10">Driveway</option>
+          <option value="0.12">Deck / Fence</option>
+        </select>
+
+        <button type="button" onclick="calculateQuote()" class="bg-green-600 hover:bg-green-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg w-full transition">Calculate Quote</button>
+      </form>
+
+      <p class="mt-4 text-xl font-bold" id="quoteResult"></p>
+    </div>
+  </section>
+
+<!-- GALLERY SLIDESHOW -->
+<section id="gallery" class="py-20 px-6 md:px-20 bg-gray-100">
+<h2 class="text-4xl font-bold text-center mb-10">Project Gallery</h2>
+
+
+<div class="relative max-w-6xl mx-auto overflow-hidden rounded-2xl shadow-2xl bg-transparent">
+<!-- Slides -->
+<div id="slideContainer" class="relative w-full h-96">
+<img src="pictures/IMG_1555.webp" class="slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" />
+<img src="pictures/IMG_1556.webp" class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" />
+<img src="pictures/IMG_1693.webp" class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" />
+<img src="pictures/IMG_1707.webp" class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" />
+</div>
+
+
+<!-- Buttons Removed for Auto‑Slide Only -->
+
+<!-- Dots -->
+<div id="slideDots" class="flex justify-center gap-4 mt-6 bg-transparent">
+<div class="dot w-3 h-3 bg-green/40 rounded-full cursor-pointer" onclick="goToSlide(0)"></div>
+<div class="dot w-3 h-3 bg-white/40 rounded-full cursor-pointer" onclick="goToSlide(1)"></div>
+<div class="dot w-3 h-3 bg-white/40 rounded-full cursor-pointer" onclick="goToSlide(2)"></div>
+<div class="dot w-3 h-3 bg-white/40 rounded-full cursor-pointer" onclick="goToSlide(3)"></div>
+</div>
+</div>
+</section>
+
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
+
+
+function updateSlides() {
+slides.forEach((slide, index) => {
+slide.style.opacity = index === currentSlide ? '1' : '0';
+});
+dots.forEach((dot, index) => {
+dot.style.background = index === currentSlide ? '#ddd688' : '#888';
+});
+}
+
+
+function nextSlide() {
+currentSlide = (currentSlide + 1) % totalSlides;
+updateSlides();
+}
+
+
+function prevSlide() {
+currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+updateSlides();
+}
+
+
+function goToSlide(index) {
+currentSlide = index;
+updateSlides();
+}
+
+
+// Auto-slide
+setInterval(nextSlide, 4000);
+
+
+updateSlides();
+</script>
+
+<!-- CALL NOW SECTION -->
+<section id="contact" class="py-16 px-6 md:px-20 bg-green-900 text-white text-center">
+<h2 class="text-4xl font-bold mb-4">Call Now</h2>
+<p class="text-xl mb-6">Need fast service? We're ready to help!</p>
+<a href="tel:+8635218159" class="bg-white text-green-700 font-bold px-8 py-4 rounded-xl shadow-lg text-2xl hover:bg-gray-200 transition">
+📞 (863) 521‑8159
+</a>
+</section>
+
+  <footer class="bg-gray-800 text-white text-center py-6 mt-0">
+    <p>&copy; 2025 ProClean Power Washing. All rights reserved.</p>
+
+<script>
+// Scroll Reveal animations
+ScrollReveal().reveal('.service-card', { interval: 200, distance: '40px', origin: 'bottom' });
+
+// Quote Calculator
+function calculateQuote() {
+let sqft = document.getElementById('sqft').value;
+let rate = document.getElementById('surface').value;
+if(!sqft) return document.getElementById('quoteResult').innerText = "Please enter square footage.";
+let cost = sqft * rate;
+document.getElementById('quoteResult').innerText = `Estimated Price: $${cost.toFixed(2)}`;
+}
+</script>
+
+</body>
+</html>
